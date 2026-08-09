@@ -1,0 +1,51 @@
+cat > .gitignore <<'EOF'
+# Gradle
+.gradle/
+**/build/
+
+# Gradle wrapper
+!gradle/wrapper/gradle-wrapper.jar
+
+# IntelliJ IDEA
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# VS Code
+.vscode/
+
+# Eclipse
+.classpath
+.project
+.settings/
+
+# Java
+*.class
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Environment / secrets
+.env
+.env.*
+!.env.example
+
+# Temporary files
+*.tmp
+*.temp
+*.swp
+*.swo
+
+# Node
+node_modules/
+
+# Coverage / reports
+**/coverage/
+**/reports/
+
+# Docker local override
+docker-compose.override.yml
+EOF
